@@ -7,11 +7,12 @@ public class Imc {
 
         System.out.println("Qual o peso?");
         peso = scanner.nextDouble();
+
         System.out.println("Qual a altura?");
         altura = scanner.nextDouble();
-        scanner.close();
+        
         System.out.println("O seu IMC é " + (peso/(Math.pow(altura, 2))));
         
-       
+        scanner.close();
     }
 }

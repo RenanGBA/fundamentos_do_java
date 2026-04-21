@@ -7,11 +7,14 @@ public class Conversor {
 
         System.out.println("Digite o tempo em segundos:");
         segundos = scanner.nextInt();
+        
         horas = segundos / 3600;
         segundosRestantes = segundos%3600;
         minutos = segundosRestantes/60;
         segundosRestantes = segundosRestantes%60;
-        scanner.close();
+
         System.out.print(horas + "h " + minutos + "min " + segundosRestantes + "s");
+
+        scanner.close();
      }
 }

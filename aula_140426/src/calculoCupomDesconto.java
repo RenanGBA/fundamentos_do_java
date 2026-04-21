@@ -7,9 +7,12 @@ public class calculoCupomDesconto {
 
         System.out.println("Qual o valor do produto?");
         valor = scanner.nextDouble();
+
         System.out.println("Qual o valor do desconto?");
         desconto = scanner.nextDouble();
-        scanner.close();
+        
         System.out.println("O valor do produto com desconto é: R$" + (valor - (valor*(desconto/100))));
+
+        scanner.close();
     }
 }

@@ -8,12 +8,13 @@ public class verificadorDeSenha {
         
         System.out.println("Digite a senha:");
         senhaInput = scanner.nextLine();
-        scanner.close();
 
         if (senhaInput.equals(senha)){
             System.out.println("Acesso aprovado!");
         } else {
             System.out.println("Senha incorreta! \nAcesso negado!");
         }
+        
+        scanner.close();
     }
 }

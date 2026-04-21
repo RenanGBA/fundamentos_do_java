@@ -8,12 +8,17 @@ public class CalculoContaRestaurante {
 
         System.out.println("Qual o valor da conta?");
         valor = scanner.nextDouble();
+
         System.out.println("Qual a porcentagem da taxa de serviço?");
         porcentagemServico = scanner.nextDouble();
+
         System.out.println("Qual o número de pessoas pagantes?");
         pagantes = scanner.nextInt();
+        
         valorComPorcentagem = valor+valor*(porcentagemServico/100);
-        scanner.close();
+        
         System.out.println("Cada pessoa precisa pagar: R$" + valorComPorcentagem/pagantes);
+
+        scanner.close();
      }
 }
